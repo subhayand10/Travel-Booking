@@ -1,5 +1,4 @@
 
-// const config = { backendEndpoint: "http://43.204.212.57:8082/" };
-const config = { backendEndpoint: "https://qtrip-dynamic-lowe.onrender.com/" };
+const config = { backendEndpoint: "https://travel-booking-5tf7.onrender.com/" };
 
 export default config;
