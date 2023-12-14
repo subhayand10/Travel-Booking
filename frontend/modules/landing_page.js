@@ -35,7 +35,11 @@ function addCityToDOM(id, city, description, image) {
   //row_ele.append(column_ele)
   
   let column_ele_a=document.createElement("a")
-  column_ele_a.setAttribute("href",`../../frontend/pages/adventures/?city=${id}`)
+  // column_ele_a.setAttribute("href",`../../frontend/pages/adventures/?city=${id}`)
+   column_ele_a.setAttribute(
+     "href",
+     `./pages/adventures/?city=${id}`
+   );
   column_ele_a.setAttribute("id",`${id}`)
   column_ele.append(column_ele_a)
 
