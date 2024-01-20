@@ -3,6 +3,10 @@ import config from "../conf/index.js";
 async function init() {
   //Fetches list of all cities along with their images and description
   let cities = await fetchCities();
+  let loader = document.querySelector(".content p");
+  let div_loader = document.querySelector(".content div");
+  loader.setAttribute("id", `hide-loader`);
+  div_loader.setAttribute("id", `hide-loader`);
 
   //Updates the DOM with the cities
   if (cities) {
